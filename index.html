@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ramiroposadas57@gmail.com">
+    <meta name="base-url" content=".">
+    <title>Alza Motor - ¿Check Engine? Solución rápida y económica.</title>
+    <link rel="icon" href="images/title.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/atropos@2/atropos.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="gradient-canvas" data-colors="#554226, #03162D, #002027, #020210, #02152A" data-speed="2"
+        data-horizontal-pressure="3" data-vertical-pressure="5" data-wave-frequency-x="1" data-wave-frequency-y="3"
+        data-wave-amplitude="8" data-shadows="0" data-highlights="2" data-color-brightness="1" data-color-saturation="6"
+        data-wireframe="false" data-color-blending="7" data-background-color="#003FFF" data-background-alpha="1"
+        data-grain-intensity="0.175" data-transition-in>
+    </canvas>
+
+    <div id="spotlight"></div>
+
+    <a href="/" class="fixed-logo-container">
+        <img src="images/logo.png" alt="Alza Motor Logo Fijo">
+    </a>
+
+    <nav class="top-nav">
+        <div class="nav-links-container">
+            <a href="#hero-section" class="nav-link active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Inicio</span>
+            </a>
+            <a href="#check-engine-section" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <span>Problema</span>
+            </a>
+            <a href="#purchase-section" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                <span>Solución</span>
+            </a>
+            <a href="#gallery" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span>Galería</span>
+            </a>
+            <a href="#installation-section" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15.5 14.5L19 18l-4.5 3.5L10 18l3.5-3.5" />
+                    <path d="M8.5 9.5L5 6l4.5-3.5L14 6l-3.5 3.5" />
+                    <line x1="12" x2="12" y1="22" y2="2" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>Instalación</span>
+            </a>
+            <a href="#faq-section" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                <span>Preguntas</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Contacto</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="scroll-content">
+        <section id="hero-section" class="hero-section">
+            <div class="hero-content">
+                <video autoplay loop muted playsinline class="hero-main-logo"
+                    style="width: 100%; max-width: 650px; height: auto; border: none;">
+                    <source src="videos/logo.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+                <p class="subtitle" style="margin-top: 1rem;">¿Check Engine? Solución rápida y económica.</p>
+                <a href="https://wa.me/50493143705?text=Hola%20Alza%20Motor,%20vi%20su%20página%20web%20y%20estoy%20interesado%20en%20el%20Alza%20para%20sensor%20de%20oxígeno.%20Me%20gustaría%20saber%20más%20sobre%20el%20producto%20y%20cómo%20puedo%20comprarlo.%20¿Tienen%20disponibilidad%20y%20cuál%20sería%20el%20proceso%20de%20envío%20en%20Honduras?%20¡Gracias!"
+                    target="_blank" class="cta-button" style="margin-top: 2rem;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg>
+                    <span>Compra Ahora</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="check-engine-section" class="content-section text-center">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title">Adios <span class="highlight">Check Engine</span>.</h2>
+                <p class="section-subtitle">Códigos <span class="highlight">P0420</span> y <span class="highlight">P0430</span>, 
+                    detectan baja eficiencia del catalizador, pero nuestro mini catalizador actúa como un engañador preciso, desactivando la señal y restaurando la tranquilidad en tu tablero. Tecnología simple, resultado eficaz.</p>
+                <div class="check-engine-container">
+                    <img id="check-engine-gif" src="images/check.gif" alt="Animación Check Engine de Alza">
+                </div>
+                <p class="section-subtitle">Con Alza, el problema se convierte en historia.</p>
+            </div>
+        </section>
+
+        <section id="purchase-section" class="content-section animate-on-scroll">
+            <div class="purchase-layout">
+                <div class="purchase-image-column">
+                    <div id="product-atropos" class="atropos product-image-large-container">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner">
+                                    <img id="product-image" src="images/gallery/3.png"
+                                        alt="Alza para Sensor de Oxígeno en Detalle" class="product-image-large">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details-atropos" class="atropos">
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner">
+                                <div class="purchase-details-column glass-effect">
+                                    <h2 id="product-title" class="section-title" data-atropos-offset="3"></h2>
+
+                                    <div class="product-selector" data-atropos-offset="1">
+                                        <button class="product-selector-btn active" data-product="mesh">Alza con
+                                            Malla</button>
+                                        <button class="product-selector-btn" data-product="filter">Alza Recto</button>
+                                        <button class="product-selector-btn " data-product="l-filter">Alza tipo
+                                            L</button>
+                                        <button class="product-selector-btn" data-product="45-degree">Alza 45
+                                            Grados</button>
+                                    </div>
+
+                                    <div class="autoplay-progress" data-atropos-offset="0">
+                                        <div class="autoplay-progress-bar"></div>
+                                    </div>
+
+                                    <div id="product-details-content" class="product-details">
+                                        <p id="product-price" class="product-price" data-atropos-offset="2"></p>
+                                        <div id="product-description-content" data-atropos-offset="0"></div>
+                                        <a id="cta-whatsapp-link" href="" target="_blank" class="cta-button"
+                                            data-atropos-offset="4">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                                </path>
+                                            </svg>
+                                            <span>Compra Ahora</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title text-center">Diseñadas Según <span class="highlight">Tu Vehículo</span>.</h2>
+                <p class="section-subtitle">Nuestros 4 modelos de alza vienen con ángulos diseñados para encajar perfectamente en tu vehículo, garantizando compatibilidad, durabilidad y eficiencia.</p>
+                <div class="gallery-grid">
+                    <div class="atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner gallery-item"
+                                    style="background-image: url('images/gallery/alza_recta.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner gallery-item"
+                                    style="background-image: url('images/gallery/alza_grado_45.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner gallery-item"
+                                    style="background-image: url('images/gallery/3.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atropos">
+                        <div class="atropos-scale">
+                            <div class="atropos-rotate">
+                                <div class="atropos-inner gallery-item"
+                                    style="background-image: url('images/gallery/4.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive-model-section" class="content-section">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title">Conoce  <span class="highlight">Nuestro Producto</span></h2>
+                <p class="section-subtitle">Descubre cómo nuestro alza está diseñado para encajar perfectamente en tu vehículo.</p>
+                <div id="interactive-webgl-container-main"></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title">Adaptador <span class="highlight">O2 Universal</span></h2>
+                <div class="product-spec-container">
+                    <div id="product-description-secondary">
+                        <p><strong>Funciones:</strong></p>
+                        <ul>
+                            <li>Estos espaciadores contienen un pequeño filtro de acero inoxidable que elimina los CEL
+                                para la eficiencia del catalizador por debajo de la eficiencia.</li>
+                            <li>Funcionará en cualquier modelo con un sensor de O2 estándar (rosca M18 x 1.5).</li>
+                        </ul>
+                        <p><strong>Especificación:</strong></p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero Inoxidable</li>
+                            <li><strong>Color:</strong> Plata</li>
+                            <li><strong>Tamaño de Rosca:</strong> M18 x 1.5</li>
+                            <li><strong>Longitud:</strong> Aprox. 46.5 mm / 1.83 pulgadas</li>
+                        </ul>
+                        <p><strong>Paquete Incluido:</strong> 1 x Espaciador de sensor de oxígeno.</p>
+                        <p class="spec-note"><strong>Nota:</strong> La foto no muestra el tamaño real, por favor
+                            consulte la descripción para detalles. El color real del artículo puede variar ligeramente.
+                        </p>
+                    </div>
+                    <div id="interactive-webgl-container-secondary"></div>
+                </div>
+            </div>
+        </section>
+        <section id="installation-section" class="content-section">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title">Instalación <span class="highlight">Interactiva</span>.</h2>
+                <p class="section-subtitle">Sigue estos pasos para una instalación correcta. Se recomienda que el
+                    vehículo esté frío y utilizar equipo de seguridad.</p>
+
+                <div class="installation-diagram-container">
+                    <div id="diagram-step-text" class="diagram-step-text" style="margin: 10px;"></div> <br>
+                    <div class="diagram-visual-area">
+                        <svg id="installation-svg" viewBox="0 0 500 250">
+                            <defs>
+                                <!-- Gradient for the exhaust pipe -->
+                                <linearGradient id="pipeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#B0B0B0" />
+                                    <stop offset="50%" style="stop-color:#8C8C8C" />
+                                    <stop offset="100%" style="stop-color:#A0A0A0" />
+                                </linearGradient>
+                                <!-- Gradient for the catalytic converter -->
+                                <linearGradient id="catGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#95a5a6" />
+                                    <stop offset="50%" style="stop-color:#7f8c8d" />
+                                    <stop offset="100%" style="stop-color:#849293" />
+                                </linearGradient>
+                                <!-- Glow filter for highlighting -->
+                                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+
+                            <!-- Exhaust Pipe -->
+                            <g id="diag-exhaust-group">
+                                <path id="diag-exhaust"
+                                    d="M 20 125 C 80 115, 150 125, 220 125 H 380 C 450 125, 480 115, 480 115"
+                                    stroke="url(#pipeGradient)" stroke-width="30" fill="none" stroke-linecap="round" />
+                                <!-- Flange 1 -->
+                                <rect x="15" y="110" width="20" height="30" rx="5" fill="#7f8c8d" />
+                                <circle cx="25" cy="118" r="2" fill="#34495e" />
+                                <circle cx="25" cy="132" r="2" fill="#34495e" />
+                                <!-- Flange 2 -->
+                                <rect x="465" y="100" width="20" height="30" rx="5" fill="#7f8c8d" />
+                                <circle cx="475" cy="108" r="2" fill="#34495e" />
+                                <circle cx="475" cy="122" r="2" fill="#34495e" />
+                            </g>
+
+                            <!-- Catalytic Converter -->
+                            <g id="diag-cat-group" transform="translate(180, 95)">
+                                <path
+                                    d="M 0 15 C 0 5, 10 0, 20 0 H 140 C 150 0, 160 5, 160 15 V 45 C 160 55, 150 60, 140 60 H 20 C 10 60, 0 55, 0 45 Z"
+                                    fill="url(#catGradient)" stroke="#566573" stroke-width="2" />
+                                <text x="80" y="35" font-family="'Exo 2', sans-serif" font-size="14" fill="#ecf0f1"
+                                    text-anchor="middle">Catalizador</text>
+                            </g>
+
+                            <!-- O2 Sensor Port -->
+                            <path d="M 380 110 L 380 90 L 390 90 L 390 110 Z" fill="#7f8c8d" stroke="#566573"
+                                stroke-width="1" />
+
+                            <!-- L-shaped Spacer -->
+                            <g id="diag-spacer" transform="translate(385, 60)" opacity="0">
+                                <path d="M -15 -15 L 15 -15 L 15 5 L 5 5 L 5 25 L -5 25 L -5 5 L -15 5 Z" fill="#bdc3c7"
+                                    stroke="#7f8c8d" stroke-width="1.5" />
+                            </g>
+
+                            <!-- O2 Sensor -->
+                            <g id="diag-sensor" transform="translate(385, 60)">
+                                <!-- Sensor body -->
+                                <path d="M -10 -20 L 10 -20 L 10 10 L 5 15 L -5 15 L -10 10 Z" fill="#95a5a6"
+                                    stroke="#566573" stroke-width="1.5" />
+                                <rect x="-8" y="-18" width="16" height="8" fill="rgba(0,0,0,0.1)" />
+
+                                <!-- Alza / Spacer -->
+                                <rect x="-6" y="-55" width="12" height="20" rx="3" ry="3" fill="#7f8c8d"
+                                    stroke="#566573" stroke-width="1.2" />
+
+                                <!-- Sensor tip -->
+                                <path d="M -4 -35 L 4 -35 L 4 -20 L -4 -20 Z" fill="#34495e" />
+
+                                <!-- Cable -->
+                                <path d="M 0 -75 L 0 -50" stroke="#2c3e50" stroke-width="3" />
+                                <rect x="-8" y="-80" width="16" height="8" rx="2" fill="#2c3e50" />
+                            </g>
+
+
+                            <!-- Llave -->
+                            <g id="diag-wrench" transform="translate(450, 40) rotate(30)" opacity="0">
+                                <!-- Cuerpo rectangular del cubo -->
+                                <rect x="-15" y="-10" width="30" height="20" rx="3" fill="#e74c3c" stroke="#c0392b"
+                                    stroke-width="2" />
+
+                                <!-- Mango -->
+                                <rect x="0" y="-5" width="40" height="10" rx="2" fill="#e74c3c" stroke="#c0392b"
+                                    stroke-width="2" />
+
+                                <!-- Agujero cuadrado (para la tuerca) -->
+                                <rect x="-8" y="-8" width="16" height="16" rx="2" fill="#2c3e50" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="diagram-controls">
+                        <button id="prev-step-btn" class="diagram-btn">Anterior</button>
+                        <button id="next-step-btn" class="diagram-btn">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="content-section">
+            <div class="text-box glass-effect animate-on-scroll">
+                <h2 class="section-title">Preguntas <span class="highlight">Frecuentes</span>.</h2>
+                <p class="section-subtitle">Resolvemos tus dudas más comunes sobre las Alzas para sensor de oxígeno.</p>
+                <div class="faq-container">
+                    <details class="faq-item" open>
+                        <summary class="faq-question">¿Qué son las alzas para sensor de oxígeno?</summary>
+                        <div class="faq-answer">
+                            <p>También conocidas como espaciadores o adaptadores para sensor de oxígeno (O2 sensor
+                                spacer).</p>
+                            <p>Son piezas metálicas (generalmente de acero inoxidable o latón) que se colocan en el
+                                puerto donde va el sensor de oxígeno del escape.</p>
+                            <p>Su función principal es separar ligeramente el sensor del flujo directo de gases, con el
+                                fin de:</p>
+                            <ul>
+                                <li>Evitar que se encienda el Check Engine (MIL) por códigos de eficiencia del
+                                    catalizador (como P0420 o P0430).</li>
+                                <li>Permitir el uso de catalizadores universales o sistemas modificados de escape.</li>
+                                <li>Reducir errores en la lectura del sensor secundario.</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Sirve para cualquier carro?</summary>
+                        <div class="faq-answer">
+                            <p>Sí, nuestras alzas son universales y funcionan en la mayoría de vehículos que utilizan
+                                sensores de oxígeno con rosca estándar M18 x 1.5, que es la más común en autos y
+                                camionetas.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Qué hago si sigue marcando Check Engine?</summary>
+                        <div class="faq-answer">
+                            <p>En la mayoría de los casos, la alza elimina el error. Sin embargo:</p>
+                            <ul>
+                                <li>Verifica que el sensor de oxígeno esté en buen estado.</li>
+                                <li>Asegúrate de haber instalado la alza correctamente y que no existan fugas en el
+                                    escape.</li>
+                                <li>Si el problema persiste, puede ser que el catalizador esté demasiado dañado o el
+                                    motor tenga otro tipo de falla mecánica que active la luz.</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">¿Cuál es la diferencia entre alza recta y con ángulo?</summary>
+                        <div class="faq-answer">
+                            <ul>
+                                <li><strong>Alza recta:</strong> se enrosca en línea recta, ideal si tienes suficiente
+                                    espacio en el sistema de escape.</li>
+                                <li><strong>Alza con ángulo (90° o 45°):</strong> se usa en lugares donde no hay espacio
+                                    para colocar el sensor recto. Facilita la instalación en escapes más ajustados y de
+                                    difícil acceso.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <h2 class="section-title">Contacto y <span class="highlight">Compra</span></h2>
+            <p class="footer-text">Estamos aquí para ayudarte. Contáctanos para cualquier consulta o para realizar tu
+                pedido.</p>
+
+            <div class="purchase-info-container">
+                <div class="purchase-info-column">
+                    <h3 class="purchase-info-title">Métodos de Envío</h3>
+                    <div class="shipping-companies">
+                        <div class="shipping-company">
+                            <img src="images/logoForza.png" alt="Forza">
+                            <span>Forza</span>
+                        </div>
+                        <div class="shipping-company">
+                            <img src="images/logoc807.png" alt="c807 Xpress">
+                            <span>c807 Xpress</span>
+                        </div>
+                        <div class="shipping-company">
+                            <img src="images/CargoExpreso.png" alt="Cargo Expreso">
+                            <span>Cargo Expreso</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="purchase-info-column">
+                    <h3 class="purchase-info-title">Métodos de Pago</h3>
+                    <p class="payment-methods-text">Aceptamos <span class="highlight">transferencia bancaria</span> y
+                        <span class="highlight">pago en efectivo</span>.
+                    </p>
+                    <p class="footer-text-small">Usted paga el producto al momento de recibirlo en sus manos.</p>
+                </div>
+            </div>
+
+            <div class="footer-contact-buttons">
+                <a href="https://wa.me/50493143705?text=Hola%20Alza%20Motor,%20vi%20su%20página%20web%20y%20estoy%20interesado%20en%20el%20Alza%20para%20sensor%20de%20oxígeno.%20Me%20gustaría%20saber%20más."
+                    target="_blank" class="footer-button whatsapp" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg>
+                    <span>Escríbenos por WhatsApp</span>
+                </a>
+                <a href="https://www.facebook.com/alzamotorhonduras" target="_blank" class="footer-button facebook"
+                    aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z">
+                        </path>
+                    </svg>
+                    <span>Visítanos en Facebook</span>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Alza Motor. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/atropos@2/atropos.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/shadergradient@1.0.1/dist/shadergradient.js"></script>
+    <script type="importmap">{
+        "imports": {
+            "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+        }
+    }</script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

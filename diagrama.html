@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instalación de Alza Tipo L y Sensor de Oxígeno</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f6f8; margin:0; padding:24px; display:flex; justify-content:center;}
+    .card { background:#fff; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.12); padding:20px; }
+    h2 { margin:0 0 16px; text-align:center; color:#2c3e50; }
+    svg text { fill:#2c3e50; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Instalación de Alza Tipo L y Sensor de Oxígeno</h2>
+
+    <!-- Vista 700x350 para que todo respire -->
+    <svg viewBox="0 0 700 350" width="700" height="350" role="img" aria-label="Diagrama de instalación de alza tipo L y sensor de oxígeno">
+
+      <!-- ===== Tubo de escape (más abajo y largo) ===== -->
+      <rect id="pipe" x="50" y="220" width="600" height="36" rx="8" fill="#7d8b8f"/>
+      <text x="70" y="210">Tubo de escape</text>
+
+      <!-- ===== Puerto original del sensor (separado del catalizador) ===== -->
+      <!-- “Chimenea” en el tubo, 60 px a la izquierda del catalizador -->
+      <rect id="port" x="360" y="200" width="16" height="30" rx="3" fill="#aeb6bf" stroke="#6b7d8c" stroke-width="2"/>
+      <text x="318" y="185">Puerto original</text>
+      <line x1="338" y1="186" x2="360" y2="205" stroke="#2c3e50" stroke-width="1.5"/>
+
+      <!-- Flecha de instalación (alza → puerto) -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <polygon points="0,0 10,5 0,10" fill="#2c3e50"/>
+        </marker>
+      </defs>
+      <line x1="378" y1="170" x2="368" y2="200" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+
+      <!-- ===== Alza tipo L (más alta y lejos del catalizador) ===== -->
+      <!-- Colocada justo encima del puerto, con aire de 50–60 px del catalizador -->
+      <g id="l-spacer" fill="none" stroke="#2c3e50" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <!-- pierna vertical -->
+        <line x1="368" y1="175" x2="368" y2="145"/>
+        <!-- codo + tramo horizontal -->
+        <polyline points="368,145 368,140 395,140"/>
+      </g>
+      <text x="405" y="132">Alza tipo L</text>
+
+      <!-- ===== Sensor de oxígeno (separado de la alza y del catalizador) ===== -->
+      <!-- Sensor 25 px a la derecha del extremo de la alza; no toca el catalizador -->
+      <g id="o2-sensor">
+        <!-- cuerpo -->
+        <rect x="410" y="118" width="16" height="40" rx="3" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+        <!-- punta -->
+        <rect x="412" y="158" width="12" height="10" fill="#455a64"/>
+        <!-- cable curvo hacia la derecha -->
+        <path d="M 418 118
+                 C 475 115, 530 120, 585 160
+                 C 600 170, 610 190, 610 200"
+              fill="none" stroke="#2c3e50" stroke-width="4"/>
+      </g>
+      <text x="448" y="120">Sensor de oxígeno</text>
+
+      <!-- ===== Catalizador (más a la derecha, con espacio claro) ===== -->
+      <!-- Distancia de ~55 px entre el final de la alza/sensor y el catalizador -->
+      <g id="cat" transform="translate(465,160)">
+        <!-- tubito de entrada alineado con el tubo -->
+        <rect x="-30" y="56" width="30" height="12" rx="3" fill="#98a3aa"/>
+        <!-- cuerpo -->
+        <rect x="0" y="0" width="180" height="92" rx="22" fill="#c8cdd1" stroke="#7f8c8d" stroke-width="3"/>
+        <!-- tubito de salida -->
+        <rect x="180" y="56" width="30" height="12" rx="3" fill="#98a3aa"/>
+        <text x="90" y="52" text-anchor="middle" font-weight="bold">Catalizador</text>
+      </g>
+
+    </svg>
+  </div>
+</body>
+</html>
